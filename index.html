@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const students = [
+    { name: "Катюша",
+     grade: 95 
+    },
+    { 
+        name: "Люда",
+         grade: 88
+    },
+    { name: "Ника",
+     grade: 68 
+    },
+    { name: "Елизар",
+     grade: 8 
+    },
+    { name: "Ева",
+     grade: 77
+    }
+]
+
+for (let i = 0; i < students.length; i++) {
+    let Grade;
+    if (students[i].grade > 90) {
+       americanGrade = "A";
+    } else if (students[i].grade > 70) {
+        americanGrade = "B";
+    } else if (students[i].grade > 50) {
+        americanGrade = "C";
+    } else {
+        americanGrade = "F";
+    }
+    console.log(students[i].name + ", ты получаешь " + americanGrade)
+}
+ </script>
+</body>
+</html>
